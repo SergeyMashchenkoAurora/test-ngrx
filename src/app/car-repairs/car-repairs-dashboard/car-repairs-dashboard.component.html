@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Car Repairs Statistics</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <ng-container>
+      <app-dashboard-statistic
+        [value]=""
+        [label]="'To do'"></app-dashboard-statistic>
+      <app-dashboard-statistic
+        [value]=""
+        [label]="'In Progress'"></app-dashboard-statistic>
+      <app-dashboard-statistic
+        [value]=""
+        [label]="'Done'"></app-dashboard-statistic>
+    </ng-container>
+    <mat-spinner></mat-spinner>
+  </mat-card-content>
+</mat-card>
+
+

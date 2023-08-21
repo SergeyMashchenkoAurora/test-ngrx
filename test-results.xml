@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 115.0.5790.170 (Linux x86_64)" package="" timestamp="2023-08-21T14:47:58" id="0" hostname="sergey-aurora-ROG-Zephyrus-G15-GA503RW-GA503RW" tests="12" errors="0" failures="12" time="0.171">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/115.0.5790.170 Safari/537.36"/>
+  </properties>
+  <testcase name="AppComponent when starting from kanban board should show new repairs" time="0.078" classname="AppComponent when starting from kanban board">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'query')
+    at getText (src/app/app.component.spec.ts:121:14)
+    at assertRepairIsDisplayedCorrectly (src/app/app.component.spec.ts:124:14)
+    at newRepairs (src/app/app.component.spec.ts:176:9)
+    at Array.forEach (&lt;anonymous&gt;)
+    at UserContext.apply (src/app/app.component.spec.ts:175:7)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:43)
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from kanban board should not reload data when going to dashboard" time="0.014" classname="AppComponent when starting from kanban board">
+    <failure type="">Expected DebugElement({ nativeNode: &lt;mat-spinner _ngcontent-a-c57 role="progressbar" tabindex="-1" class="mat-mdc-progress-spinner mdc-circular-progress mat-primary mdc-circular-progress--indeterminate" aria-valuemin="0" aria-valuemax="100" mode="indeterminate" style="width: 100px; height: 100px;"&gt;...&lt;/mat-spinner&gt; }) to be null.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:162:56)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from kanban board when advancing in progress repairs should add the repair to done column" time="0.008" classname="AppComponent when starting from kanban board when advancing in progress repairs">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'query')
+    at advanceRepair (src/app/app.component.spec.ts:135:14)
+    at UserContext.apply (src/app/app.component.spec.ts:270:9)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:43)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:34)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:20)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from kanban board when advancing in progress repairs should remove the repair from in progress column" time="0.007" classname="AppComponent when starting from kanban board when advancing in progress repairs">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'query')
+    at advanceRepair (src/app/app.component.spec.ts:135:14)
+    at UserContext.apply (src/app/app.component.spec.ts:252:9)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:43)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:34)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:20)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from kanban board when advancing new repairs should add the repair to in progress column" time="0.01" classname="AppComponent when starting from kanban board when advancing new repairs">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'query')
+    at advanceRepair (src/app/app.component.spec.ts:135:14)
+    at UserContext.apply (src/app/app.component.spec.ts:233:9)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:43)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:34)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:20)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from kanban board when advancing new repairs should remove the repair from new column" time="0.007" classname="AppComponent when starting from kanban board when advancing new repairs">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'query')
+    at advanceRepair (src/app/app.component.spec.ts:135:14)
+    at UserContext.apply (src/app/app.component.spec.ts:215:9)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:43)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:582:34)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:597:20)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from kanban board should only show a spinner until data is loaded" time="0.007" classname="AppComponent when starting from kanban board">
+    <failure type="">Expected 3 to equal 0.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:143:69)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+    <failure type="">Expected DebugElement({ nativeNode: &lt;mat-spinner _ngcontent-a-c56 role="progressbar" tabindex="-1" class="mat-mdc-progress-spinner mdc-circular-progress mat-primary mdc-circular-progress--indeterminate" aria-valuemin="0" aria-valuemax="100" mode="indeterminate" style="width: 100px; height: 100px;"&gt;...&lt;/mat-spinner&gt; }) to be null.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:148:56)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from kanban board should show done repairs" time="0.007" classname="AppComponent when starting from kanban board">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'query')
+    at getText (src/app/app.component.spec.ts:121:14)
+    at assertRepairIsDisplayedCorrectly (src/app/app.component.spec.ts:124:14)
+    at doneRepairs (src/app/app.component.spec.ts:202:9)
+    at Array.forEach (&lt;anonymous&gt;)
+    at UserContext.apply (src/app/app.component.spec.ts:201:7)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:43)
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from kanban board should show ongoing repairs" time="0.007" classname="AppComponent when starting from kanban board">
+    <failure type="">TypeError: Cannot read properties of undefined (reading 'query')
+    at getText (src/app/app.component.spec.ts:121:14)
+    at assertRepairIsDisplayedCorrectly (src/app/app.component.spec.ts:124:14)
+    at inProgressRepairs (src/app/app.component.spec.ts:189:9)
+    at Array.forEach (&lt;anonymous&gt;)
+    at UserContext.apply (src/app/app.component.spec.ts:188:7)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:52)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:43)
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from dashboard should show correct stats" time="0.008" classname="AppComponent when starting from dashboard">
+    <failure type="">Expected '' to equal '2'.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:113:57)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+    <failure type="">Expected '' to equal '1'.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:114:57)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+    <failure type="">Expected '' to equal '1'.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:115:57)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from dashboard should not reload data when going to list" time="0.011" classname="AppComponent when starting from dashboard">
+    <failure type="">Expected DebugElement({ nativeNode: &lt;mat-spinner _ngcontent-a-c56 role="progressbar" tabindex="-1" class="mat-mdc-progress-spinner mdc-circular-progress mat-primary mdc-circular-progress--indeterminate" aria-valuemin="0" aria-valuemax="100" mode="indeterminate" style="width: 100px; height: 100px;"&gt;...&lt;/mat-spinner&gt; }) to be null.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:98:56)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+  </testcase>
+  <testcase name="AppComponent when starting from dashboard should only show a spinner until data is loaded" time="0.007" classname="AppComponent when starting from dashboard">
+    <failure type="">Expected 3 to equal 0.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:79:77)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+    <failure type="">Expected DebugElement({ nativeNode: &lt;mat-spinner _ngcontent-a-c57 role="progressbar" tabindex="-1" class="mat-mdc-progress-spinner mdc-circular-progress mat-primary mdc-circular-progress--indeterminate" aria-valuemin="0" aria-valuemax="100" mode="indeterminate" style="width: 100px; height: 100px;"&gt;...&lt;/mat-spinner&gt; }) to be null.
+    at &lt;Jasmine&gt;
+    at UserContext.apply (src/app/app.component.spec.ts:84:56)
+    at UserContext.apply (node_modules/zone.js/fesm2015/zone-testing.js:2030:30)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:26)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:39)
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+,Chrome Headless 115.0.5790.170 (Linux x86_64) WARN: 'Navigation triggered outside Angular zone, did you forget to call 'ngZone.run()'?'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
